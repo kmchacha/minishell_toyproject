@@ -52,7 +52,7 @@ void read_routine(int sock, char *serv_message)
 	int str_len;
 	while (1)
 	{
-		// TODO: Read message from the echo server 
+		// Read message from the server 
 		str_len = read(sock, serv_message, MESSAGE_SIZE);
 		if(str_len <= 0) break;
 

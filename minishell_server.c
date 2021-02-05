@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 			close(clnt_sock);
 			continue;
 		}
-		if (pid == 0) // child -> echo
+		if (pid == 0) // child
 		{
 			close(serv_sock);
 
